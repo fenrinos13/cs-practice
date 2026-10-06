@@ -21,7 +21,7 @@ def ranking(names, scores):
     res = []
     for i in id:
         res.append(names[i])
-    return scores
+    return res
 
 def above_average(names, scores):
     avg = average(scores)
