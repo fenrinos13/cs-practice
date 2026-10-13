@@ -1,7 +1,3 @@
-names =  ["Аня", "Боря", "Вика"]
-scores = [7.0,   9.0,    9.0]
-
-
 def winner(names, scores):
     if not scores: return ""
     best_score = max(scores)
