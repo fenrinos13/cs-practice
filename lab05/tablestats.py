@@ -2,7 +2,7 @@ def read_rows(lines):
     header = None
     rows = []
 
-    for line in lines:е
+    for line in lines:
         line = line.rstrip('\r\n')
         if not line:
             continue
