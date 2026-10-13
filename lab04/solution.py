@@ -1,4 +1,4 @@
-def winner(names, scores):
+    def winner(names, scores):
     if not scores: return ""
     best_score = max(scores)
     best_index = scores.index(best_score)
