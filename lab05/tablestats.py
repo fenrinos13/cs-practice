@@ -44,3 +44,9 @@ for row in rows:
     if not has_kind:
         return 0.0
     return round(total, 1)
+
+def to_csv(counts):
+    result = "тип,количество\n"
+    for kind in sorted(counts.keys()):
+        result += f"{kind},{counts[kind]}\n"
+    return result
