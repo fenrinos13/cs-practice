@@ -1,4 +1,7 @@
-    def winner(names, scores):
+names =  ["Аня", "Боря", "Вика"]
+scores = [7.0,   9.0,    9.0]
+
+def winner(names, scores):
     if not scores: return ""
     best_score = max(scores)
     best_index = scores.index(best_score)
@@ -25,3 +28,8 @@ def above_average(names, scores):
     for i in range(len(scores)):
         if scores[i] > avg: res.append(names[i])
     return res
+if __name__ == '__main__':
+    print(winner(names, scores))
+    print(average(scores))
+    print(ranking(names, scores))
+    print(above_average(names, scores))
